@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+    int n , s=0 , i ;
+    cout<<"Entere a natural number \n";
+    cin>> n;
+    for(i=1;i<=n;i++)
+     s+=i;
+    cout<<"The sum of first n matural number is\t"<<s;
+ return 0;
+}
