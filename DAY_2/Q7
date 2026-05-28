@@ -1,0 +1,16 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+  int i,n,prod=1,dig;
+  cout<<"Enter any number\n";
+  cin>>n;
+  while (n>0){
+   dig=n%10;
+   prod*=dig;
+   n=n/10;
+   }
+
+  cout<<"the product of the digits are\t"<<prod;
+ return 0;
+}
