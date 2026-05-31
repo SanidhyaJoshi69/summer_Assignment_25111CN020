@@ -2,18 +2,24 @@
 using namespace std;
 
 int main() {
-    int n,s=0;
+    int n, t, r, f, s=0;
+
     cout <<"Enter a number: ";
     cin >>n;
-    for(int i = 1; i < n; i++) {
-        if(n%i==0) {
-            s= s+ i;
-        }
+    t=n;
+    while(t > 0) {
+        r= t % 10;
+        f = 1;
+
+        for(int i = 1; i <= r; i++) 
+            f = f * i;
+
+        s = s + f;
+        t=t / 10;
     }
-    if(s == n) 
-        cout << n << " is a Perfect Number";
-    
+    if(s==n) 
+    cout << n << " is a Strong Number";
     else 
-        cout << n << " is not a Perfect Number";
+    cout << n << " is not a Strong Number";
     return 0;
 }
