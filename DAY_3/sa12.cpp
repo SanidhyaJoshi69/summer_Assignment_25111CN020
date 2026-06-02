@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main(){
+int a,b,i,max,lcm;
+cout<<"enter two nums"<<endl;
+cin>>a>>b;
+max=(a>b)?a:b;
+while(true){
+ if(max%a == 0 && max%b == 0)
+ lcm=max;
+ break;
+}
+max++;
+cout<<"LCM = "<<lcm;
+return 0;
+}

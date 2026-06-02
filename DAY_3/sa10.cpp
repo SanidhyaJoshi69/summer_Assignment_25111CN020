@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main(){
+int i ,n,f,j;
+cout<<"Enter a number"<<endl;
+cin>>n;
+cout<<"the prime nums btw the given range is"<<endl;
+for(i=2;i<=n;i++){
+    f=0;
+    for(j=2;j<=i/2;j++){
+    if(i%j==0){
+    f++;
+    break;}
+   }
+
+ if(f!=1)
+ cout<<i<<"\t";
+
+}
+
+return 0;
+}
