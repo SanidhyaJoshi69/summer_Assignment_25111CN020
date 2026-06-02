@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main(){
+  int i,n,c=0;
+  cout<<"Enter any number\n";
+  cin>>n;
+  while (n>0){
+   n=n/10;
+   c++;}
+
+  cout<<"the number of digits are\t"<<c;
+ return 0;
+}
