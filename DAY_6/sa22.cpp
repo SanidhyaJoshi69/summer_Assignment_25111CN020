@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int dtb(int n){
+    int d , p=1,x=0;
+    while(n>0){
+    d=n%2;
+    n/=2;
+    x=(d*p)+x;
+    p*=10;}
+return x;
+}
+int main(){
+    int n,r;
+    cout<<"enter a number: "<<endl;
+    cin>>n;
+    r=dtb(n);
+    cout<<"DECIMAT TO BINARY CONVERSION IS: "<<r<<endl;
+
+    return 0;
+}
